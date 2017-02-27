@@ -15,18 +15,34 @@
     <body>
         <h1>Simple Salary Calculator</h1>
         <hr>
-        <form action="hello.jsp" method="post">
-            <label>Hours Worked:</label>
-            <input type="text" name="hWorked" required>
-            <br>
-            <label>Hourly Pay:</label>
-            <input type="text" name="hPay" required>
-            <br><br>
+        <form action="results.jsp" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Hours Worked:</td>
+                        <td><input type="text" name="hWorked" size="20" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Hourly Pay:</td>
+                        <td><input type="text" name="hPay" size="20" required></td>
+                    </tr>
+            
+                    <tr>
+                        <td>Pre-tax Deduct:</td>
+                        <td><input type="text" name="preTD" size="20" required></td>
+                    </tr>
+            
+                    <tr>
+                        <td>Post-tax Deduct:</td>
+                        <td><input type="text" name="postTD" size="20" required>+</td>
+                    </tr>
+                </tbody>
+            </table>
+            
             <input type="submit" value="Submit" id="submit">
             <input type="reset" value="Clear" id="clear">
         
-            
-            
         </form>
     </body>
 </html>
