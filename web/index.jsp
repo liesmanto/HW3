@@ -35,7 +35,7 @@
             
                     <tr>
                         <td>Post-tax Deduct:</td>
-                        <td><input type="text" name="postTD" size="20" required>+</td>
+                        <td><input type="text" name="postTD" size="20" required></td>
                     </tr>
                 </tbody>
             </table>
