@@ -19,12 +19,9 @@
         double postTDeduct = Double.parseDouble(request.getParameter("postTD"));
         double otHours = 0;
         double otRate = 0;
-        double gPay = 0;
-        double taxablePay = gPay - preTDeduct;
+        double gPay;
         double preTPay = 0;
-        double taxAmt = 0 ;
-        double postTPay = taxablePay - taxAmt;
-        double netPay = postTPay - postTDeduct;
+        double taxAmt;
         
         if (thWorked > 40){
             int regularHours = 40;
@@ -38,12 +35,16 @@
             gPay = thWorked * hRate;
         }
         
+        double taxablePay = gPay - preTDeduct;
+
         if (gPay < 500) {
             taxAmt = taxablePay * 0.18;
         }
         else {
             taxAmt = taxablePay * 0.22;
-        }        
+        }
+        double postTPay = taxablePay - taxAmt;
+        double netPay = postTPay - postTDeduct;
     %>
     <body>
         <h1>Salary Info</h1>
