@@ -16,7 +16,7 @@
         <h1>Simple Salary Calculator</h1>
         <hr>
         <form action="results.jsp" method="post">
-            <table>
+            <table align="center">
                 <tbody>
                     <tr>
                         <td>Hours Worked:</td>

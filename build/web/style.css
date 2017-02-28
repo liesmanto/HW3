@@ -9,14 +9,33 @@ and open the template in the editor.
 */
 
 body {
+    
     text-align:center;
     margin:50px 680px;
+    background: lightskyblue;
+    background-color: lightskyblue;
+    color: white;
 }
 
-table{
+.info {
+    border-collapse: collapse;
+    color: black;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+table {
     font-size: 16px;
 }
 
 h1{
     font-size: 20px;
+    color: white;
+}
+
+hr{
+    color:white;
+    
 }
