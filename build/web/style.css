@@ -12,9 +12,9 @@ body {
     
     text-align:center;
     margin:50px 680px;
-    background: lightskyblue;
     background-color: lightskyblue;
     color: white;
+    font-family: arial;
 }
 
 .info {
@@ -27,7 +27,7 @@ body {
 
 
 table {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 h1{
