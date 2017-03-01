@@ -28,6 +28,7 @@ body {
 
 table {
     font-size: 14px;
+    border-collapse: collapse;
 }
 
 h1{
