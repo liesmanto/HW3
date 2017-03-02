@@ -21,7 +21,7 @@
         double otHours = 0;
         double otRate = 0;
         double gPay;
-        double preTPay = 0;
+        double preTPay;
         double taxAmt;
         
         if (thWorked > 40){
@@ -36,15 +36,15 @@
             gPay = thWorked * hRate;
         }
         
-        double taxablePay = gPay - preTDeduct;
+        preTPay = gPay - preTDeduct;
 
         if (gPay < 500) {
-            taxAmt = taxablePay * 0.18;
+            taxAmt = preTPay * 0.18;
         }
         else {
-            taxAmt = taxablePay * 0.22;
+            taxAmt = preTPay * 0.22;
         }
-        double postTPay = taxablePay - taxAmt;
+        double postTPay = preTPay - taxAmt;
         double netPay = postTPay - postTDeduct;
     %>
     <body>
