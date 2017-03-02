@@ -11,10 +11,10 @@ and open the template in the editor.
 body {
     
     text-align:center;
-    margin:50px 680px;
     background-color: lightskyblue;
     color: white;
     font-family: arial;
+    margin-top: 50px;
 }
 
 .info {
@@ -38,5 +38,5 @@ h1{
 
 hr{
     color:white;
-    
+    margin:5px 560px;    
 }
